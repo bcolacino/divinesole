@@ -13,7 +13,7 @@
     <title>Divine Sole | Saratoga Springs, NY</title>
     <style>
 body{
-	background: url(ds_background_2.jpg) no-repeat center center fixed; 
+	background: url(ds_background_5.jpg) no-repeat top center fixed; 
 	background-size:cover;
 
 }
@@ -49,16 +49,18 @@ h1, h2, h3, h4, h5, .countdown-text, .countdown-number, .link-font{
 #main-logo{
   width:50%;
 }
+.inline-image{
+  max-width:400px;
+  width:400px;
+  height:auto;
+  border-radius:1rem;
+  box-shadow: 6px 6px 8px 0px #222;
+}
 
 @media screen and (max-width: 992px){
-  .countdown-text{
-    height:100px;
-    width:100px;
-    overflow: hidden;
-    padding:20px;
-  }
-  .countdown-number{
-    font-size:1.85rem;
+  .inline-image{
+    max-width:300px;
+    width:300px;
   }
 @media screen and (max-width: 768px){
   .countdown-text{
@@ -79,6 +81,10 @@ h1, h2, h3, h4, h5, .countdown-text, .countdown-number, .link-font{
   }
   #main-logo{
     width:70%;
+  }
+  .inline-image{
+    max-width:400px;
+    width:400px;
   }
 }
 @media screen and (max-width: 576px){
@@ -101,6 +107,11 @@ h1, h2, h3, h4, h5, .countdown-text, .countdown-number, .link-font{
   #main-logo{
     width:80%;
   }
+  .inline-image{
+    max-width:375px;
+    width:375px;
+  }
+
 }
 @media screen and (max-width: 400px){
   .countdown-text{
@@ -118,6 +129,11 @@ h1, h2, h3, h4, h5, .countdown-text, .countdown-number, .link-font{
     padding-left:2px !important;
     padding-right:2px !important;
   }
+  .inline-image{
+    max-width:300px;
+    width:300px;
+  }
+
 }
     </style>
 
@@ -133,69 +149,32 @@ h1, h2, h3, h4, h5, .countdown-text, .countdown-number, .link-font{
   			<div class="col">
   				<h1>Welcome to the home page of Divine Sole</h1>
   				<h3 class="py-2">A specialty sneaker store in Saratoga Springs, NY</h3>
-  				<h3 class="py-2">Opening April 2<sup>nd</sup>, 2021</h3>
+  				<h1 class="py-2">NOW OPEN!</h1>
+          <h3 class="py-2">454 Broadway</h3>
+          <h3 class="py-2">Inside Saratoga Marketplace, Bottom Floor</h3>
   			</div>
     	</div><!-- row -->
-      <div class="row no-gutters justify-content-center pt-3">
-        <div class="col-auto" id="countdown-timer">
-          <div class="countdown-text">days
-            <div id="days" class="countdown-number"></div>
-          </div>
+      <div class="row justify-content-center">
+        <div class="col-md-auto py-2">
+          <img src="saratoga_marketplace.jpg" class="inline-image">
         </div>
-        <div class="col-auto" id="countdown-timer">
-          <div class="countdown-text">hours
-            <div id="hours" class="countdown-number"></div>
-          </div>
-        </div>
-        <div class="col-auto" id="countdown-timer">
-          <div class="countdown-text">minutes
-            <div id="minutes" class="countdown-number"></div>
-          </div>
-        </div>
-        <div class="col-auto" id="countdown-timer">
-          <div class="countdown-text">seconds
-            <div id="seconds" class="countdown-number"></div>
-          </div>
+        <div class="col-md-auto py-2">
+          <img src="divine_sole_storefront.jpg" class="inline-image">
         </div>
       </div><!-- row -->
+
       <div class="row py-5">
         <div class="col">
           <a href="https://www.instagram.com/divinesolesaratoga" target="_blank" class="link-font"><img src="sm_instagram_black.svg" width="40px" height="auto" style="margin-right:1rem;">@DivineSoleSaratoga</a>
         </div>
       </div>
+      <div class="row pb-5">
+        <div class="col">
+          <h3>Web store coming soon. For now, visit us in person at the shop!</h3>
+        </div>
+      </div>
     </div><!-- container -->
-        <script>
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 2, 2021 11:00:00").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
         <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
